@@ -20,8 +20,8 @@ I'm a final-year BE student and Cloud Computing Intern at **Rooman Technologies*
 
 I don't just follow tutorials — I build, break, and fix things until I understand how they actually work. From setting up custom VPCs to automating deployments with GitHub Actions, I focus on real-world cloud skills that translate directly to the job.
 
-- 🌍 Based in **Bangalore, India**
-- 🎓 BE graduating **mid-2025**
+- 🌍 Based in **Belgaum, India**
+- 🎓 BE graduating **mid-2026**
 - 💼 Currently interning at **Rooman Technologies** (Cloud Computing)
 - 📚 Currently learning **Terraform** (Infrastructure as Code)
 - 🔍 Looking for **Junior Cloud Engineer / Cloud Support / DevOps Trainee** roles
