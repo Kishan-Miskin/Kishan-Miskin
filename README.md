@@ -4,33 +4,34 @@
 
 ---
 
-<div align="center">
+<div align="left">
 
-<h1>
+<h1 style="margin-bottom: 0;">
   Hi, I'm Kishan 👋
 </h1>
 
-<h3>
-  ☁️ Cloud Computing Intern at Rooman Technologies | Cloud Enthusiast
-</h3>
+<p style="margin-top: 5px; font-size: 16px;">
+  ☁️ <b>Cloud Computing Intern</b> at <b>Rooman Technologies</b> <br>
+  🚀 Cloud & DevOps Enthusiast | Building real-world projects
+</p>
 
 <br>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Building+Cloud+Projects...;Learning+DevOps+Tools...;Future+Cloud+Engineer..." />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=0EA5E9&vCenter=true&width=450&lines=Building+Cloud+Projects...;Learning+DevOps+Tools...;Future+Cloud+Engineer..." />
 
 <br><br>
 
 <a href="https://linkedin.com/in/kishanmiskin">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="https://github.com/Kishan-Miskin">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Open%20to%20Work-Cloud%20Engineer-22c55e?style=flat&logo=icloud&logoColor=white"/>
+<img src="https://img.shields.io/badge/Open%20to%20Work-Cloud%20Engineer-16a34a?style=for-the-badge&logo=icloud&logoColor=white"/>
 
 </div>
 ---
