@@ -4,30 +4,35 @@
 
 ---
 
-<div align="left">
+<div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                                                                      ║
-║     ██╗  ██╗██╗███████╗██╗  ██╗ █████╗ ███╗   ██╗                  ║
-║     ██║ ██╔╝██║██╔════╝██║  ██║██╔══██╗████╗  ██║                  ║
-║     █████╔╝ ██║███████╗███████║███████║██╔██╗ ██║                  ║
-║     ██╔═██╗ ██║╚════██║██╔══██║██╔══██║██║╚██╗██║                  ║
-║     ██║  ██╗██║███████║██║  ██║██║  ██║██║ ╚████║                  ║
-║     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝                  ║
-║                                                                      ║
-║                    M  I  S  K  I  N                                  ║
-║                                                                      ║
-║            Cloud Computing Intern  ·  AWS  ·  DevOps                ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
+<h1>
+  Hi, I'm Kishan 👋
+</h1>
 
-[![LinkedIn](https://img.shields.io/badge/──%20LinkedIn%20──-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kishanmiskin)
-[![GitHub](https://img.shields.io/badge/──%20GitHub%20──-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kishan-Miskin)
-![Status](https://img.shields.io/badge/🟢_Open_to_Work-Junior_Cloud_Engineer-1D9E75?style=for-the-badge)
+<h3>
+  ☁️ Cloud Computing Intern at Rooman Technologies | Cloud Enthusiast
+</h3>
+
+<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Building+Cloud+Projects...;Learning+DevOps+Tools...;Future+Cloud+Engineer..." />
+
+<br><br>
+
+<a href="https://linkedin.com/in/kishanmiskin">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://github.com/Kishan-Miskin">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Open%20to%20Work-Cloud%20Engineer-22c55e?style=flat&logo=icloud&logoColor=white"/>
 
 </div>
-
 ---
 
 ##  — PROFESSIONAL SUMMARY
