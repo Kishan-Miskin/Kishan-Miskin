@@ -3,6 +3,7 @@
 </div>
 
 ---
+
 <div align="center">
 
 ```
@@ -26,6 +27,16 @@
 ![Status](https://img.shields.io/badge/🟢_Open_to_Work-Junior_Cloud_Engineer-1D9E75?style=for-the-badge)
 
 </div>
+
+---
+
+## ⚡ TL;DR — What I Do
+
+> I build **real AWS infrastructure** — not toy projects. Multi-tier VPCs, private subnets, load balancers, RDS databases, containerised apps, CI/CD pipelines — all from scratch.
+>
+> Final-year BE student · Cloud Computing Intern @ Rooman Technologies · Belgaum, India 🇮🇳
+>
+> **Looking for:** Junior Cloud Engineer · Cloud Support · DevOps roles
 
 ---
 
@@ -65,7 +76,8 @@ kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 │                                                                  │
 │   I don't just follow tutorials.                                 │
 │   I build, break, and fix things until I understand how          │
-│   they actually work.                                            │
+│   they actually work — including intentionally misconfiguring    │
+│   live infrastructure to study failure modes first-hand.         │
 │                                                                  │
 │   From spinning up custom VPCs to automating full CI/CD          │
 │   pipelines with GitHub Actions — I focus on real-world          │
@@ -73,6 +85,18 @@ kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🗺️ Quick Skills Overview
+
+| Domain | Core Skills | Level |
+|---|---|---|
+| ☁️ **AWS** | EC2 · S3 · VPC · IAM · RDS · CloudFront · ALB · Route 53 | ████████░░ |
+| ⚙️ **DevOps** | GitHub Actions · Docker · Docker Compose · Bash · PM2 | ████████░░ |
+| 🌐 **Networking** | Custom VPCs · Subnets · Security Groups · NAT · Bastion | ████████░░ |
+| 🏗️ **IaC** | Terraform — EC2 provisioning · security groups · user-data | ██████░░░░ |
+| 🔧 **Tools** | Linux · Git · Nginx · Node.js · SSH · VS Code | █████████░ |
 
 ---
 
@@ -134,20 +158,28 @@ nodejs            [INSTALLED]   ████████░░    REST APIs · P
 
 ---
 
+## 📁 Projects
+
 ![cmd](https://img.shields.io/badge/$%20ls%20-la%20~%2Fprojects%2F-6D28D9?style=flat)
 
 ```
 total 5 projects
-drwxr-xr-x  kishan  staff   cloud-drive/         ← 3-tier AWS architecture
-drwxr-xr-x  kishan  staff   cloudnest/           ← containerised file storage
-drwxr-xr-x  kishan  staff   aws-2tier-lab/       ← break/fix learning lab
-drwxr-xr-x  kishan  staff   terraform-ec2/       ← infrastructure as code
-drwxr-xr-x  kishan  staff   cicd-pipeline/       ← github actions automation
+drwxr-xr-x  kishan  staff   cloud-drive/         ← 3-tier AWS architecture (VPC · ALB · EC2 · RDS · S3)
+drwxr-xr-x  kishan  staff   cloudnest/           ← containerised file storage (Docker · Flask · Nginx)
+drwxr-xr-x  kishan  staff   aws-2tier-lab/       ← break/fix learning lab (Multi-AZ · Bastion · NAT)
+drwxr-xr-x  kishan  staff   terraform-ec2/       ← infrastructure as code (Terraform · EC2 · IaC)
+drwxr-xr-x  kishan  staff   cicd-pipeline/       ← github actions automation (CI/CD · Vercel · YAML)
 ```
 
 ---
 
 ## 🗄️ CloudDrive — 3-Tier Cloud Storage App on AWS
+
+![complexity](https://img.shields.io/badge/Complexity-Production--Grade-8B5CF6?style=flat-square)
+![aws](https://img.shields.io/badge/Platform-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![status](https://img.shields.io/badge/Status-Live-22c55e?style=flat-square)
+
+> **What it does:** A fully private, production-grade file storage platform on AWS. Users upload files via browser — files land in a private S3 bucket (never publicly accessible), metadata sits in a private RDS MySQL database, and all traffic enters through CloudFront + ALB before reaching a private EC2 instance. Zero direct internet exposure to any backend resource.
 
 ![cmd](https://img.shields.io/badge/$%20cd%20cloud--drive%20%26%26%20aws%20describe--architecture%20--tier%203-7C3AED?style=flat)
 
@@ -201,20 +233,17 @@ drwxr-xr-x  kishan  staff   cicd-pipeline/       ← github actions automation
   ✓  Custom VPC           →  public + private subnets, IGW, route tables
 ```
 
-![cmd](https://img.shields.io/badge/$%20cat%20stack.txt-7C3AED?style=flat)
-
-```
-Stack:
-  AWS VPC · EC2 (t3.micro) · S3 (x2) · CloudFront · RDS MySQL
-  Application Load Balancer · IAM · VPC Endpoint · Security Groups
-  Node.js · PM2 · REST APIs
-```
-
-`AWS VPC` `EC2` `S3` `CloudFront` `RDS MySQL` `ALB` `IAM` `VPC Endpoint` `Node.js` `PM2`
+**Stack:** `AWS VPC` `EC2` `S3 ×2` `CloudFront` `RDS MySQL` `ALB` `IAM` `VPC Endpoint` `Node.js` `PM2`
 
 ---
 
-## 🐳 CloudNest — Containerized Web App
+## 🐳 CloudNest — Containerised Web App
+
+![complexity](https://img.shields.io/badge/Complexity-Intermediate-6366f1?style=flat-square)
+![platform](https://img.shields.io/badge/Platform-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![status](https://img.shields.io/badge/Status-Complete-22c55e?style=flat-square)
+
+> **What it does:** A self-hosted file storage web app — upload, browse, and download files through a browser UI. Built with a multi-container Docker setup: Nginx handles all incoming traffic, Flask handles application logic, and a named Docker volume provides persistent storage across container restarts. Runs on any machine with Docker — no cloud account needed.
 
 ![cmd](https://img.shields.io/badge/$%20cd%20cloudnest%20%26%26%20docker%20compose%20up%20--build-7C3AED?style=flat)
 
@@ -242,8 +271,6 @@ volumes:
   uploads:                         # ← named volume, survives restarts
 ```
 
-![cmd](https://img.shields.io/badge/$%20docker%20compose%20ps-7C3AED?style=flat)
-
 ```
 # ── Container Architecture ───────────────────────────────────────────
 
@@ -258,20 +285,26 @@ volumes:
        ▼
   [ uploads volume ]   ←── named Docker volume (persists data)
 
-# ── Features ─────────────────────────────────────────────────────────
+# ── Key Features ─────────────────────────────────────────────────────
   ✓  Upload files via browser UI
   ✓  Live image gallery rendered by Flask
   ✓  Download files on demand
   ✓  Self-hosted — runs anywhere Docker runs
-  ✓  Single command deploy: docker-compose up
-  ✓  Zero external dependencies or cloud costs
+  ✓  Single command deploy: docker-compose up --build
+  ✓  Zero cloud costs · zero external dependencies
 ```
 
-`Flask` `Nginx` `Docker` `Docker Compose` `Python` `Self-hosted`
+**Stack:** `Flask` `Nginx` `Docker` `Docker Compose` `Python` `Self-hosted`
 
 ---
 
 ## 🔬 AWS 2-Tier Break/Fix Lab — Learn by Failing
+
+![complexity](https://img.shields.io/badge/Complexity-Intermediate-6366f1?style=flat-square)
+![platform](https://img.shields.io/badge/Platform-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![type](https://img.shields.io/badge/Type-Learning%20Lab-f59e0b?style=flat-square)
+
+> **What it does:** A 2-tier AWS architecture (ALB → private EC2 ×2 AZs → private RDS) built specifically to be broken and debugged. Intentional misconfigurations — stopped services, corrupted route tables, broken security groups — were introduced then diagnosed and fixed. The goal: build real troubleshooting instincts, not just deploy working infrastructure.
 
 ![cmd](https://img.shields.io/badge/$%20cd%20aws--2tier--lab%20%26%26%20cat%20architecture.md-7C3AED?style=flat)
 
@@ -304,29 +337,29 @@ volumes:
 ![cmd](https://img.shields.io/badge/$%20cat%20break--fix--log.txt-7C3AED?style=flat)
 
 ```
-# ── What I broke and what I learned ─────────────────────────────────
+# ── What I broke · What I learned ───────────────────────────────────
 
-  EXPERIMENT 1: Stopped nginx on Server 1
+  EXPERIMENT 1 — Stopped nginx on Server 1
   ─────────────────────────────────────────────────────────────────
-  Expected:  traffic disruption
-  Actual:    ALB health check flagged Server 1 unhealthy in 30s
-             100% of traffic automatically rerouted to Server 2
-             Zero user impact
-  Recovery:  Started nginx → Server 1 rejoined target group
-             automatically — zero manual intervention needed
+  Observed:  ALB health check marked Server 1 unhealthy in 30s
+             All traffic automatically rerouted to Server 2
+             Zero user-facing impact
+  Takeaway:  ALB failover is automatic and requires no manual
+             intervention — health checks are the backbone of HA
 
-  EXPERIMENT 2: NAT Gateway route table misconfiguration
+  EXPERIMENT 2 — NAT Gateway route table misconfiguration
   ─────────────────────────────────────────────────────────────────
   Symptom:   Private EC2 instances had no outbound internet
-  Root cause: private-subnet-2 was associated with the WRONG
-              route table — missing the 0.0.0.0/0 → NAT rule
+  Root cause: private-subnet-2 associated with the WRONG route
+              table — missing the 0.0.0.0/0 → NAT Gateway rule
   Fix:       Re-associated subnet-2 with the correct route table
-  Lesson:    Debugging a live misconfiguration > building it right
-             the first time. This stuck.
+  Takeaway:  Subnet → route table association is a silent failure
+             point. Debugging a live misconfiguration teaches more
+             than building correctly from a tutorial.
 
 # ── What I implemented ───────────────────────────────────────────────
   ✓  Custom VPC — public + private subnets across 2 AZs
-  ✓  ALB — round-robin distribution + health check automation
+  ✓  ALB — round-robin + automated health check failover
   ✓  EC2 in private subnets — zero direct internet exposure
   ✓  Bastion Host — SSH agent forwarding into private instances
   ✓  NAT Gateway — outbound internet for private instances
@@ -334,11 +367,16 @@ volumes:
   ✓  3-layer security groups: ALB → EC2 → RDS (least privilege)
 ```
 
-`AWS VPC` `ALB` `EC2` `RDS MySQL` `Bastion Host` `NAT Gateway` `Security Groups` `Multi-AZ`
+**Stack:** `AWS VPC` `ALB` `EC2` `RDS MySQL` `Bastion Host` `NAT Gateway` `Security Groups` `Multi-AZ`
 
 ---
 
 ## ⚙️ Terraform-EC2 — Infrastructure as Code
+
+![complexity](https://img.shields.io/badge/Complexity-Beginner%2FIntermediate-22c55e?style=flat-square)
+![platform](https://img.shields.io/badge/Platform-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+
+> **What it does:** Provisions a complete EC2 web server on AWS using Terraform — key pair, security group, and instance — all from a single `terraform apply`. A `user_data` script installs and configures Nginx automatically on first boot. The entire stack is version-controlled and can be destroyed and recreated in under 60 seconds with zero console clicks.
 
 ![cmd](https://img.shields.io/badge/$%20cd%20terraform--ec2%20%26%26%20terraform%20apply-7C3AED?style=flat)
 
@@ -370,18 +408,23 @@ resource "aws_security_group" "allow_ssh_http" {
   Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
   Elapsed time: 47s ✓
 
-# ── Why IaC matters ──────────────────────────────────────────────────
+# ── Why this matters ─────────────────────────────────────────────────
   ✓  Entire stack version-controlled on GitHub
   ✓  Destroy + recreate full infrastructure in < 60 seconds
   ✓  Zero manual AWS console clicks — 100% code-driven
-  ✓  User-data script bootstraps Nginx automatically on boot
+  ✓  user_data script bootstraps Nginx automatically on boot
 ```
 
-`Terraform` `AWS EC2` `Bash` `IaC` · [View repo →](https://github.com/Kishan-Miskin/Terraform-EC2)
+**Stack:** `Terraform` `AWS EC2` `Bash` `IaC` · [View repo →](https://github.com/Kishan-Miskin/Terraform-EC2)
 
 ---
 
 ## 🔄 CI/CD Pipeline — GitHub Actions
+
+![complexity](https://img.shields.io/badge/Complexity-Beginner%2FIntermediate-22c55e?style=flat-square)
+![platform](https://img.shields.io/badge/Platform-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+> **What it does:** A complete automated deployment pipeline — every `git push` to `main` triggers a GitHub Actions workflow that installs dependencies, runs tests, and deploys to Vercel production in ~45 seconds. No manual steps, no direct server access — secrets stored in GitHub, never in code.
 
 ![cmd](https://img.shields.io/badge/$%20cd%20cicd--pipeline%20%26%26%20cat%20.github%2Fworkflows%2Fdeploy.yml-7C3AED?style=flat)
 
@@ -418,29 +461,35 @@ jobs:
 #       ├──▶  checkout  →  install  →  test  →  deploy to Vercel
 #                                                       │
 #                                               production ✓
+#
 #   ✓  End-to-end deployment: ~45 seconds
 #   ✓  Zero manual intervention required
 #   ✓  Full DevOps automation workflow
 ```
 
-`GitHub Actions` `CI/CD` `Vercel` `YAML` · [View repo →](https://github.com/Kishan-Miskin/cicd)
+**Stack:** `GitHub Actions` `CI/CD` `Vercel` `YAML` · [View repo →](https://github.com/Kishan-Miskin/cicd)
 
 ---
+
+## 🎯 Currently Working On
 
 ![cmd](https://img.shields.io/badge/$%20crontab%20-l%20%23%20current%20tasks-6D28D9?style=flat)
 
 ```
-# ┌──────── What I'm actively building right now ───────────────────────
+# ┌──────── Active tasks ───────────────────────────────────────────────
 # │
-# *  Deepening Terraform — writing IaC for more complex AWS architectures
-# *  Containerising existing projects with Docker
-# *  Preparing for AWS Cloud Practitioner certification
-# *  Adding CloudWatch monitoring + alerting to existing projects
+# *  Terraform — expanding IaC to cover full VPC + multi-tier stacks
+# *  Docker — containerising existing cloud projects end-to-end
+# *  AWS Cloud Practitioner — exam prep in progress
+# *  CloudWatch — adding monitoring + alerting to existing projects
+# *  Cost optimisation — tagging, billing alerts, right-sizing
 # │
 # └────────────────────────────────────────────────────────────────────
 ```
 
 ---
+
+## 📊 GitHub Activity
 
 ![cmd](https://img.shields.io/badge/$%20git%20log%20--oneline%20--graph-6D28D9?style=flat)
 
@@ -450,9 +499,13 @@ jobs:
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kishan-Miskin&layout=compact&theme=github_dark&hide_border=true&title_color=8B5CF6&text_color=c9d1d9&bg_color=0d1117)
 
+![GitHub Streak](https://streak-stats.demolab.com?user=Kishan-Miskin&theme=github-dark-blue&hide_border=true&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA)
+
 </div>
 
 ---
+
+## 📬 Let's Connect
 
 ![cmd](https://img.shields.io/badge/$%20ssh%20kishan%40connect%20--hire--me-6D28D9?style=flat)
 
@@ -462,12 +515,20 @@ Authenticating...  ████████████████████ 
 ╭──────────────────────────────────────────────────────────────────╮
 │                                                                  │
 │   Connected to: kishan_miskin                                    │
-│   Location:     Belgaum, India                                   │
+│   Location:     Belgaum, India  🇮🇳                               │
+│   Available:    Immediately · Open to relocation · Remote OK     │
 │                                                                  │
-│   Roles matched:                                                 │
+│   Roles I'm targeting:                                           │
 │     ✓  Junior Cloud Engineer                                     │
 │     ✓  Cloud Support Engineer                                    │
-│     ✓  DevOps Trainee                                            │
+│     ✓  DevOps Trainee / Junior DevOps Engineer                   │
+│     ✓  AWS Solutions Architect (Associate — in progress)         │
+│                                                                  │
+│   What I bring:                                                  │
+│     →  Real multi-tier AWS builds — not just tutorial projects   │
+│     →  Strong networking fundamentals (VPC · subnets · routing)  │
+│     →  Break/fix mindset — I debug under pressure                │
+│     →  CI/CD, containers, and IaC — the full DevOps loop         │
 │                                                                  │
 │   📎  linkedin.com/in/kishanmiskin                               │
 │   💻  github.com/Kishan-Miskin                                   │
