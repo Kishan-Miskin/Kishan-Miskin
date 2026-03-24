@@ -4,7 +4,7 @@
 
 ---
 
-<div align="center">
+<div align="left">
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
@@ -30,13 +30,12 @@
 
 ---
 
-## ⚡ TL;DR — What I Do
+##  — PROFESSIONAL SUMMARY
 
-> I build **real AWS infrastructure** — not toy projects. Multi-tier VPCs, private subnets, load balancers, RDS databases, containerised apps, CI/CD pipelines — all from scratch.
->
-> Final-year BE student · Cloud Computing Intern @ Rooman Technologies · Belgaum, India 🇮🇳
->
-> **Looking for:** Junior Cloud Engineer · Cloud Support · DevOps roles
+> Cloud Engineer with hands-on experience in Amazon Web Services (AWS) including S3, IAM, EC2, VPC, and CloudFront. Skilled
+> in AWS, Linux, and CI/CD practices for building scalable and reliable cloud environments. Strong understanding of cloud architecture,
+> networking fundamentals, and automation. Passionate about designing secure, high-availability cloud solutions and continuously
+> improving skills in modern Cloud and DevOps technologies.
 
 ---
 
