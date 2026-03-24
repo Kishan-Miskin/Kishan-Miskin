@@ -24,13 +24,13 @@
 
 ---
 
-![cmd](https://img.shields.io/badge/$_whoami-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20whoami-6D28D9?style=flat&logoColor=white&labelColor=6D28D9&color=6D28D9)
 
 ```
 kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 ```
 
-![cmd](https://img.shields.io/badge/$_cat_/etc/profile.d/kishan.conf-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cat%20%2Fetc%2Fprofile.d%2Fkishan.conf-6D28D9?style=flat)
 
 ```ini
 ╭──────────────────────────────────────────────────────────────────╮
@@ -47,7 +47,7 @@ kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 
 ---
 
-![cmd](https://img.shields.io/badge/$_cat_about__me.txt-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cat%20about__me.txt-6D28D9?style=flat)
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
@@ -71,7 +71,7 @@ kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 
 ---
 
-![cmd](https://img.shields.io/badge/$_dpkg_--list_|_grep_tech--stack-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20dpkg%20--list%20%7C%20grep%20tech--stack-6D28D9?style=flat)
 
 ### ☁️ Cloud
 
@@ -79,8 +79,9 @@ kishan_miskin  —  Cloud Computing Intern · AWS Architect · DevOps Builder
 Package            Status        Proficiency   Components
 ────────────────────────────────────────────────────────────────────────
 aws-core          [INSTALLED]   ██████████    EC2 · S3 · VPC · IAM · EBS · CloudFront
-aws-networking    [INSTALLED]   ████████░░    Route 53 · ACM · Security Groups
+aws-networking    [INSTALLED]   ████████░░    Route 53 · ACM · ALB · Security Groups
 aws-storage       [INSTALLED]   █████████░    S3 versioning · Bucket policies · ACLs
+aws-database      [INSTALLED]   ████████░░    RDS MySQL · private subnet groups
 ```
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
@@ -89,7 +90,8 @@ aws-storage       [INSTALLED]   █████████░    S3 versioning 
 ![CloudFront](https://img.shields.io/badge/CloudFront-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![VPC](https://img.shields.io/badge/VPC-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white)
-![EBS](https://img.shields.io/badge/EBS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![RDS](https://img.shields.io/badge/RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white)
+![ALB](https://img.shields.io/badge/ALB-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 
 ### ⚙️ DevOps & Automation
 
@@ -98,7 +100,7 @@ Package            Status        Proficiency   Components
 ────────────────────────────────────────────────────────────────────────
 linux             [INSTALLED]   ██████████    Bash scripting · SSH · server admin
 github-actions    [INSTALLED]   █████████░    CI/CD pipelines · YAML workflows
-docker            [INSTALLED]   ████████░░    Containerisation · image management
+docker            [INSTALLED]   ████████░░    Containerisation · Docker Compose
 terraform         [LEARNING]    ██████░░░░    IaC · EC2 provisioning · .tf configs
 ```
 
@@ -115,119 +117,225 @@ Package            Status        Proficiency   Components
 ────────────────────────────────────────────────────────────────────────
 nginx             [INSTALLED]   ████████░░    Reverse proxy · web server config
 git               [INSTALLED]   ██████████    Version control · branching strategy
-ssh               [INSTALLED]   ██████████    Key-based auth · secure tunnels
-vscode            [INSTALLED]   █████████░    Extensions · remote dev · SSH plugin
+ssh               [INSTALLED]   ██████████    Key-based auth · Bastion host · tunnels
+nodejs            [INSTALLED]   ████████░░    REST APIs · PM2 process management
 ```
 
 ![SSH](https://img.shields.io/badge/SSH-000000?style=flat-square&logo=openssh&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 ---
 
-![cmd](https://img.shields.io/badge/$_ls_-la_~/projects/-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20ls%20-la%20~%2Fprojects%2F-6D28D9?style=flat)
 
 ```
-total 4 projects
-drwxr-xr-x  kishan  staff   expense-tracker/
-drwxr-xr-x  kishan  staff   cloud-drive/
-drwxr-xr-x  kishan  staff   terraform-ec2/
-drwxr-xr-x  kishan  staff   cicd-pipeline/
+total 5 projects
+drwxr-xr-x  kishan  staff   cloud-drive/         ← 3-tier AWS architecture
+drwxr-xr-x  kishan  staff   cloudnest/           ← containerised file storage
+drwxr-xr-x  kishan  staff   aws-2tier-lab/       ← break/fix learning lab
+drwxr-xr-x  kishan  staff   terraform-ec2/       ← infrastructure as code
+drwxr-xr-x  kishan  staff   cicd-pipeline/       ← github actions automation
 ```
 
 ---
 
-### ☁️ `expense-tracker/` — AWS Static Hosting
+## 🗄️ CloudDrive — 3-Tier Cloud Storage App on AWS
 
-![cmd](https://img.shields.io/badge/$_cd_expense--tracker_&&_terraform_show-7C3AED?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cd%20cloud--drive%20%26%26%20aws%20describe--architecture%20--tier%203-7C3AED?style=flat)
 
-```hcl
-# ── Infrastructure Overview ──────────────────────────────────────────
-
-resource "aws_s3_bucket" "expense_tracker" {
-  bucket = "kishan-expense-tracker"
-
-  website {
-    index_document = "index.html"    # static hosting enabled ✓
-    error_document = "error.html"
-  }
-
-  versioning {
-    enabled = true                   # file versioning enabled ✓
-  }
-}
-
-resource "aws_s3_bucket_policy" "restrict_direct_access" {
-  # ⚠  Direct S3 URL access  →  403 Forbidden
-  # ✓  All traffic must route through CloudFront only
-  policy = data.aws_iam_policy_document.cf_only.json
-}
-
-resource "aws_cloudfront_distribution" "cdn" {
-  origin {
-    domain_name = aws_s3_bucket.expense_tracker.bucket_domain_name
-  }
-  viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate.cert.arn
-    ssl_support_method  = "sni-only"   # HTTPS enforced ✓
-  }
-  price_class = "PriceClass_All"       # global edge caching ✓
-}
-
-# ── Stack Summary ────────────────────────────────────────────────────
-#   S3 bucket         →  hosts static assets + versioning
-#   CloudFront CDN    →  global content delivery + HTTPS
-#   ACM certificate   →  SSL/TLS managed by AWS
-#   IAM policy        →  least-privilege, CloudFront-only access
-#   Route 53          →  custom domain DNS routing
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║              3-TIER ARCHITECTURE  ·  Mar 2026 – Present             ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   [ Internet ]                                                       ║
+║        │   HTTPS :443                                                ║
+║        ▼                                                             ║
+║   [ CloudFront CDN ]  ←── global edge caching + HTTPS               ║
+║        │                   └── origin: S3 frontend bucket            ║
+║        ▼                                                             ║
+║   [ Application Load Balancer ]  ←── public subnet (entry point)    ║
+║        │   HTTP :80 / HTTPS :443  (round-robin)                      ║
+║        ▼                                                             ║
+║   [ EC2 t3.micro — Node.js API ]  ←── PRIVATE subnet                ║
+║        │   managed by PM2 · no direct internet exposure              ║
+║        │                                                             ║
+║        ├──▶ [ S3 Private Bucket ]  ←── file storage                 ║
+║        │        └── pre-signed URLs (time-limited access)            ║
+║        │        └── accessed via VPC Endpoint (no internet)          ║
+║        │                                                             ║
+║        └──▶ [ RDS MySQL ]  ←── PRIVATE DB subnet                    ║
+║                 └── accessible from EC2 only (security group rule)   ║
+║                 └── no public access endpoint                        ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
-`AWS S3` `CloudFront` `ACM` `IAM` `Route 53`
+![cmd](https://img.shields.io/badge/$%20cat%20security--groups.conf-7C3AED?style=flat)
+
+```
+# ── Security Group Architecture (layered, least-privilege) ──────────
+
+  Internet  ──:443──▶  ALB Security Group
+                              │
+                         :80 ▼
+                       EC2 Security Group  (source: ALB SG only)
+                              │
+                         :3306 ▼
+                        RDS Security Group  (source: EC2 SG only)
+
+# ── IAM & Networking ─────────────────────────────────────────────────
+  ✓  EC2 IAM Role         →  S3 access — zero hardcoded credentials
+  ✓  S3 VPC Endpoint      →  private EC2 → S3 without NAT or internet
+  ✓  S3 frontend bucket   →  static hosting, CloudFront-only access
+  ✓  S3 private bucket    →  file storage via pre-signed URLs
+  ✓  RDS MySQL            →  private DB subnet, no public endpoint
+  ✓  Custom VPC           →  public + private subnets, IGW, route tables
+```
+
+![cmd](https://img.shields.io/badge/$%20cat%20stack.txt-7C3AED?style=flat)
+
+```
+Stack:
+  AWS VPC · EC2 (t3.micro) · S3 (x2) · CloudFront · RDS MySQL
+  Application Load Balancer · IAM · VPC Endpoint · Security Groups
+  Node.js · PM2 · REST APIs
+```
+
+`AWS VPC` `EC2` `S3` `CloudFront` `RDS MySQL` `ALB` `IAM` `VPC Endpoint` `Node.js` `PM2`
 
 ---
 
-### 🗄️ `cloud-drive/` — File Storage Platform
+## 🐳 CloudNest — Containerized Web App
 
-![cmd](https://img.shields.io/badge/$_cd_cloud--drive_&&_aws_describe--architecture-7C3AED?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cd%20cloudnest%20%26%26%20docker%20compose%20up%20--build-7C3AED?style=flat)
 
-```
-# ── Architecture Diagram ─────────────────────────────────────────────
+```yaml
+# ── docker-compose.yml ───────────────────────────────────────────────
 
-  [ User / Browser ]
-        │
-        ▼
-  [ EC2 Instance ]  ←── App Layer  (Ubuntu Linux + Nginx)
-        │                └── handles all upload / download requests
-        │
-        ▼
-  [ S3 Bucket ]     ←── Primary Storage Backend
-        │                └── stores all user-uploaded files
-        │
-        ▼
-  [ IAM Role ]      ←── Least-Privilege Access Control
-                         └── EC2 instance role scoped to S3 only
-                         └── zero wildcard (*) permissions
+version: "3.9"
 
-# ── Access Control ───────────────────────────────────────────────────
-  EC2     → S3        ALLOW   (scoped IAM instance role)
-  Public  → S3        DENY    (bucket not publicly accessible)
-  EC2     → internet  ALLOW   (outbound via security group)
+services:
 
-# ── Key Design Decisions ─────────────────────────────────────────────
-  ✓  IAM roles on EC2 — no hardcoded credentials anywhere
-  ✓  S3 bucket is private — app layer mediates all access
-  ✓  SSH key-based auth only — password login disabled
-  ✓  Nginx reverse proxy fronts the application
+  nginx:
+    image: nginx:alpine
+    ports: ["80:80"]               # ← public entry point
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on: [flask]            # ← waits for app to be ready
+
+  flask:
+    build: ./app
+    volumes:
+      - uploads:/app/uploads       # ← persistent file storage
+    expose: ["5000"]               # ← internal only, not public
+
+volumes:
+  uploads:                         # ← named volume, survives restarts
 ```
 
-`AWS S3` `IAM` `EC2` `Linux` `Nginx`
+![cmd](https://img.shields.io/badge/$%20docker%20compose%20ps-7C3AED?style=flat)
+
+```
+# ── Container Architecture ───────────────────────────────────────────
+
+  [ Browser ]
+       │  :80
+       ▼
+  [ nginx container ]  ←── reverse proxy + static file serving
+       │  :5000 (internal)
+       ▼
+  [ flask container ]  ←── upload · gallery · download logic
+       │
+       ▼
+  [ uploads volume ]   ←── named Docker volume (persists data)
+
+# ── Features ─────────────────────────────────────────────────────────
+  ✓  Upload files via browser UI
+  ✓  Live image gallery rendered by Flask
+  ✓  Download files on demand
+  ✓  Self-hosted — runs anywhere Docker runs
+  ✓  Single command deploy: docker-compose up
+  ✓  Zero external dependencies or cloud costs
+```
+
+`Flask` `Nginx` `Docker` `Docker Compose` `Python` `Self-hosted`
 
 ---
 
-### ⚙️ `terraform-ec2/` — Infrastructure as Code
+## 🔬 AWS 2-Tier Break/Fix Lab — Learn by Failing
 
-![cmd](https://img.shields.io/badge/$_cd_terraform--ec2_&&_terraform_apply-7C3AED?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cd%20aws--2tier--lab%20%26%26%20cat%20architecture.md-7C3AED?style=flat)
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║          2-TIER ARCHITECTURE  ·  Built to Break & Learn             ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║   [ Internet ]                                                       ║
+║        │                                                             ║
+║        ▼                                                             ║
+║   [ Application Load Balancer ]  ←── internet-facing, public subnet ║
+║        │   round-robin · health checks every 30s                     ║
+║        ├──────────────────────┐                                      ║
+║        ▼                      ▼                                      ║
+║   [ EC2 Web Server 1 ]   [ EC2 Web Server 2 ]  ←── PRIVATE subnets  ║
+║     AZ-a (private)         AZ-b (private)          2 AZs            ║
+║        │                      │                                      ║
+║        └──────────┬───────────┘                                      ║
+║                   ▼                                                  ║
+║             [ RDS MySQL ]  ←── PRIVATE DB subnet                    ║
+║               no public access · EC2-only via VPC                   ║
+║                                                                      ║
+║   [ Bastion Host ]  ←── public subnet · SSH agent forwarding        ║
+║   [ NAT Gateway  ]  ←── outbound internet for private instances     ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+![cmd](https://img.shields.io/badge/$%20cat%20break--fix--log.txt-7C3AED?style=flat)
+
+```
+# ── What I broke and what I learned ─────────────────────────────────
+
+  EXPERIMENT 1: Stopped nginx on Server 1
+  ─────────────────────────────────────────────────────────────────
+  Expected:  traffic disruption
+  Actual:    ALB health check flagged Server 1 unhealthy in 30s
+             100% of traffic automatically rerouted to Server 2
+             Zero user impact
+  Recovery:  Started nginx → Server 1 rejoined target group
+             automatically — zero manual intervention needed
+
+  EXPERIMENT 2: NAT Gateway route table misconfiguration
+  ─────────────────────────────────────────────────────────────────
+  Symptom:   Private EC2 instances had no outbound internet
+  Root cause: private-subnet-2 was associated with the WRONG
+              route table — missing the 0.0.0.0/0 → NAT rule
+  Fix:       Re-associated subnet-2 with the correct route table
+  Lesson:    Debugging a live misconfiguration > building it right
+             the first time. This stuck.
+
+# ── What I implemented ───────────────────────────────────────────────
+  ✓  Custom VPC — public + private subnets across 2 AZs
+  ✓  ALB — round-robin distribution + health check automation
+  ✓  EC2 in private subnets — zero direct internet exposure
+  ✓  Bastion Host — SSH agent forwarding into private instances
+  ✓  NAT Gateway — outbound internet for private instances
+  ✓  RDS MySQL — private subnet, reachable from EC2 only
+  ✓  3-layer security groups: ALB → EC2 → RDS (least privilege)
+```
+
+`AWS VPC` `ALB` `EC2` `RDS MySQL` `Bastion Host` `NAT Gateway` `Security Groups` `Multi-AZ`
+
+---
+
+## ⚙️ Terraform-EC2 — Infrastructure as Code
+
+![cmd](https://img.shields.io/badge/$%20cd%20terraform--ec2%20%26%26%20terraform%20apply-7C3AED?style=flat)
 
 ```hcl
 # ── main.tf ──────────────────────────────────────────────────────────
@@ -237,8 +345,7 @@ resource "aws_instance" "web_server" {
   instance_type = "t2.micro"
   key_name      = aws_key_pair.deployer.key_name
   user_data     = file("setup.sh")          # automates server config on boot ✓
-
-  tags = { Name = "kishan-tf-server" }
+  tags          = { Name = "kishan-tf-server" }
 }
 
 resource "aws_security_group" "allow_ssh_http" {
@@ -262,16 +369,16 @@ resource "aws_security_group" "allow_ssh_http" {
   ✓  Entire stack version-controlled on GitHub
   ✓  Destroy + recreate full infrastructure in < 60 seconds
   ✓  Zero manual AWS console clicks — 100% code-driven
-  ✓  User-data script bootstraps Nginx on first boot
+  ✓  User-data script bootstraps Nginx automatically on boot
 ```
 
 `Terraform` `AWS EC2` `Bash` `IaC` · [View repo →](https://github.com/Kishan-Miskin/Terraform-EC2)
 
 ---
 
-### 🔄 `cicd-pipeline/` — GitHub Actions
+## 🔄 CI/CD Pipeline — GitHub Actions
 
-![cmd](https://img.shields.io/badge/$_cd_cicd--pipeline_&&_cat_.github/workflows/deploy.yml-7C3AED?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20cd%20cicd--pipeline%20%26%26%20cat%20.github%2Fworkflows%2Fdeploy.yml-7C3AED?style=flat)
 
 ```yaml
 # ── .github/workflows/deploy.yml ─────────────────────────────────────
@@ -285,7 +392,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -305,24 +411,23 @@ jobs:
 #   git push → main
 #       │
 #       ├──▶  checkout  →  install  →  test  →  deploy to Vercel
-#       │                                              │
-#       │                                        production ✓
-#       │
+#                                                       │
+#                                               production ✓
 #   ✓  End-to-end deployment: ~45 seconds
 #   ✓  Zero manual intervention required
-#   ✓  Demonstrates full DevOps automation workflow
+#   ✓  Full DevOps automation workflow
 ```
 
 `GitHub Actions` `CI/CD` `Vercel` `YAML` · [View repo →](https://github.com/Kishan-Miskin/cicd)
 
 ---
 
-![cmd](https://img.shields.io/badge/$_crontab_-l_#_current_tasks-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20crontab%20-l%20%23%20current%20tasks-6D28D9?style=flat)
 
 ```
 # ┌──────── What I'm actively building right now ───────────────────────
 # │
-# *  Deepening Terraform — writing IaC for complex AWS architectures
+# *  Deepening Terraform — writing IaC for more complex AWS architectures
 # *  Containerising existing projects with Docker
 # *  Preparing for AWS Cloud Practitioner certification
 # *  Adding CloudWatch monitoring + alerting to existing projects
@@ -332,7 +437,7 @@ jobs:
 
 ---
 
-![cmd](https://img.shields.io/badge/$_git_log_--oneline_--graph-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20git%20log%20--oneline%20--graph-6D28D9?style=flat)
 
 <div align="center">
 
@@ -344,7 +449,7 @@ jobs:
 
 ---
 
-![cmd](https://img.shields.io/badge/$_ssh_kishan@connect_--hire--me-6D28D9?style=flat-square)
+![cmd](https://img.shields.io/badge/$%20ssh%20kishan%40connect%20--hire--me-6D28D9?style=flat)
 
 ```
 Authenticating...  ████████████████████  100%
