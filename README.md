@@ -11,8 +11,7 @@
 </h1>
 
 <p style="margin-top: 5px; font-size: 16px;">
-  ☁️ <b>Cloud Computing Intern</b> at <b>Rooman Technologies</b> <br>
-  🚀 Cloud & DevOps Enthusiast | Building real-world projects
+  Cloud & DevOps Enthusiast | Building real-world projects
 </p>
 
 <br>
