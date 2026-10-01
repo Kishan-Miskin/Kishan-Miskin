@@ -27,8 +27,7 @@
 <h6 align="center">I &nbsp;·&nbsp; A B O U T</h6>
 
 <p align="center">
-  Cloud Computing Intern at <b>Rooman Technologies</b><br>
-  Final-year BE student &nbsp;·&nbsp; Belgaum, India
+  <b>BE Graduated 2026</b>
 </p>
 
 <p align="center">
